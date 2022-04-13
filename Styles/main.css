@@ -109,6 +109,8 @@ button:hover{
 
 .container > .img-registro{
     background-image: url(../Images/2.png);
+    background: linear-gradient(rgba(13, 167, 238, 0.52),rgba(10, 213, 240, 0.596), rgba(246, 246, 171, 0.575), rgba(246, 246, 171, 0.849)), url(../Images/2.png);
+
     background-size: cover;
     background-attachment: fixed;
     
