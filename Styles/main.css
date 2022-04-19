@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     border: none;
+    row-gap: 0px;
+
 }
 
 h2{
@@ -19,72 +21,115 @@ h3{
 }
 
 button{
-    color: antiquewhite;
-    background-color: rgb(34, 144, 34);
-    margin: 50px;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border-radius: 20px;
-    transition: 1.0s;
-    border: none;
+    padding: 5px;
+    background: none;
+    font-size: 22px;
+    border-radius: 0;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
 }
 
 button:hover{
-    background-color: antiquewhite;
+    background: none;
+    font-size: 22px;
+    border-color: black;
     color: black;
+    box-shadow: 10px 10px 10px black;
 }
 .cabecera{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1, auto;
-    grid-template-areas: "logo menus";
-    align-items: center;
-    font-style: none;
-    background-color:rgb(20, 25, 25);
-    padding: 20px;
-    opacity: 80%;
+background-color: gray;
+color: white;
+height: 30px;
+font-family: serif;
 }
 
-.menus > a{
+.cabecera>div{
+    text-align: center;
+   padding-top: 6px;
+   
+}
+
+.cabecera>div>h4{
+    font-family: serif;
+}
+
+.menuizq{
+    background-image: url(../Images/pexels1\ \(1\).jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.52),rgba(57, 62, 63, 0.596), rgba(67, 67, 63, 0.575), rgba(0, 0, 0, 0.849)), url(../Images/pexels1\ \(1\).jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    grid-column: 1/6;
+}
+
+.menuizq>div{
+    margin-left: 50px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+   
+}
+
+.menu{
+    margin-top: 40px;
+    list-style: none;
+    margin-left: 10px;
+    font-size: 20px;
+    width: 50%;
+    
+}
+
+.menu>li{
+    padding-bottom: 30px;
+}
+
+.menu>li>a{
     text-decoration: none;
-    color: rgb(242, 234, 234);
-    padding: 10px;
-    font-size: 17px;
-    transition: all 1.5s;
-    margin-right: 20px;
+    color: white;
+    margin-bottom: 50px;
+    transition: 1s;
+}
+
+.menu>li>a:hover{
+    margin-left: 10px;
+    color: #C2C1CA ;
+
+
+}
+
+#boton{
+    display: flex;
+    justify-content: center;
+}
+
+#boton>button{
+    padding: 5px;
+    background: none;
+    font-size: 30px;
+    border-radius: 0;
+    border-color: white;
+    border-style: solid;
+    color: white;
+}
+
+#boton>button:hover{
+    background: none;
+    font-size: 30px;
+    border-color: black;
+    color: black;
+    box-shadow: 10px 10px 10px black;
    
-   
 }
 
-.menus > a:hover{
-    cursor: pointer;
-    background-color: rgb(135, 127, 127);
-    color: antiquewhite;
-    padding: 3px;
-    border-radius: 40px;
-   
-}
-.menus{
-    
-    grid-area: menus;
-    
-    text-align: right;
-    
-}
-
-
-
-.logo{
-    
-    grid-area: logo;
-    color: rgb(242, 234, 234);
-    text-align: left;
-    padding: 0 30px 0 0
-}
 
 .container{
-    background-color: black;
+    background-color: rgb(255, 253, 253);
     width: 100%;
    
     display: grid;
@@ -98,7 +143,8 @@ button:hover{
 .container > .invitacion,
 .container > .contactos,
 .container > div,
-.container > article{
+.container > article
+.container > .menuizq{
 
     background-color: bisque;
     padding: 20px;
@@ -108,11 +154,11 @@ button:hover{
 
 
 .container > .img-registro{
-    background-image: url(../Images/2.png);
-    background: linear-gradient(rgba(13, 167, 238, 0.52),rgba(10, 213, 240, 0.596), rgba(246, 246, 171, 0.575), rgba(246, 246, 171, 0.849)), url(../Images/2.png);
+    background-image: url(../Images/pexels2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.52),rgba(57, 62, 63, 0.596), rgba(67, 67, 63, 0.575), rgba(0, 0, 0, 0.849)), url(../Images/pexels2.jpg);
 
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     
     grid-column: 1/6;
     height: 700px;
@@ -120,6 +166,7 @@ button:hover{
     justify-content: center;
     align-items: center ;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 
@@ -127,41 +174,32 @@ button:hover{
 
 .container > .barra-lateral{
     grid-column: 1/2;
-    height: 700px;
+    height: 809px;
     background-color: white;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .productos{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin: 50px;
+    justify-content: space-between;
+    margin: 0 3px;
+    padding:  0px;
     text-decoration: none;
     
 
 }
 
 
-.productos > a{
-    
-    text-decoration: none;
-    color: gray;
-    padding: 20px;
-
-}
-
-
-.productos > a:hover{
-    color: black;
-}
 
 .container > .contenido{
     color: white;
     grid-column: 2/6;
-    height: 700px;
-    background-image: url(../Images/1.png);
+    height: 791px;
+    background-image: url(../Images/b4.png);
+    background-position: bottom;
     background-size: cover;
     padding-top: 70px;
     
@@ -170,8 +208,8 @@ button:hover{
 
 .container > .invitacion{
     grid-column: 1/6;
-    height: 700px;
-    background-color: white;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.964);
 }
 
 .invitacion > div{
@@ -179,17 +217,18 @@ button:hover{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: space-around;
+   
 }
 
-.invitacion > div >article{
-    padding: 10px;
-}
+
 
 .invitacion > div > h3{
-    margin: 60px;
+    margin: 10px;
     font-size: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: gray;
 }
 
 
