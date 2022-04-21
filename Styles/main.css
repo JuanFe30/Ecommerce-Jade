@@ -40,15 +40,16 @@ button:hover{
     box-shadow: 10px 10px 10px black;
 }
 .cabecera{
-background-color: gray;
-color: white;
-height: 30px;
+background-color: #E0E2E4;
+color: black;
+height: 50px;
 font-family: serif;
+font-size: 25px;
 }
 
 .cabecera>div{
     text-align: center;
-   padding-top: 6px;
+   padding-top: 10px;
    
 }
 
@@ -67,40 +68,79 @@ font-family: serif;
     grid-column: 1/6;
 }
 
-.menuizq>div{
-    margin-left: 50px;
-    margin-top: 60px;
+.menuizq{
     display: flex;
-    justify-content: left;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
    
 }
 
 .menu{
-    margin-top: 40px;
-    list-style: none;
-    margin-left: 10px;
-    font-size: 20px;
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
     
 }
 
-.menu>li{
-    padding-bottom: 30px;
+.menu>div>ul{
+    margin-bottom: 200px;
+    padding: 20px;
+
+} 
+
+.menu>div>ul>li{
+    list-style: none;  
+    padding: 15px 0px;
+
 }
 
-.menu>li>a{
+.menu>div>ul>li>a{
+    
     text-decoration: none;
     color: white;
-    margin-bottom: 50px;
+    font-size: 20px;
     transition: 1s;
+    
+
 }
 
-.menu>li>a:hover{
-    margin-left: 10px;
-    color: #C2C1CA ;
+.menu>div>ul>li>a:hover{
+    color: #C9C9C9 ;
+    padding-left: 8px;
+}
 
+.menu>div>h2{
+    padding: 20px 10px;
+    text-align: left;
+}
 
+.menu>div>p{
+    width: 20%;
+}
+
+.vermas{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 70px;
+   
+}
+
+.iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.iconos>ul>li{
+    list-style: none;
+    padding: 20px 0;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 1s;
+    
 }
 
 #boton{
@@ -163,7 +203,7 @@ font-family: serif;
     grid-column: 1/6;
     height: 700px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center ;
     flex-direction: column;
     margin-bottom: 20px;
@@ -173,21 +213,23 @@ font-family: serif;
 
 
 .container > .barra-lateral{
-    grid-column: 1/2;
-    height: 809px;
+    grid-column: 1/3;
+    height: 800px;
     background-color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .productos{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0 3px;
-    padding:  0px;
-    text-decoration: none;
+    justify-content: center;
+   
+    background-color: white;
     
 
 }
@@ -196,13 +238,16 @@ font-family: serif;
 
 .container > .contenido{
     color: white;
-    grid-column: 2/6;
-    height: 791px;
-    background-image: url(../Images/b4.png);
+    grid-column: 3/6;
+    height: 800px;
+    background-color: white;
     background-position: bottom;
     background-size: cover;
-    padding-top: 70px;
-    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+   gap: 10px;
 
 }
 
@@ -239,6 +284,7 @@ font-family: serif;
     text-align: center;
     background-color: rgb(20, 25, 25);
     color: white;
+    margin-top: 30px;
 
   
 
