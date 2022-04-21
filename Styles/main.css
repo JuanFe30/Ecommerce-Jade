@@ -280,6 +280,49 @@ font-size: 25px;
     color: gray;
 }
 
+.productoes{
+    height: 600px;
+   grid-column: 1/6;
+   margin: 80px 0;
+   
+   
+}
+
+table{
+    position: relative;
+    left: 450px;
+    text-align: center;
+    align-items: center;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+table>caption{
+    margin-bottom: 15px;
+}
+
+tr>th{
+    border-style: none;
+    background-color: #E6E4F3;
+    padding: 40px;
+}
+
+tbody>tr{
+    transition: 1s;
+}
+
+tbody>tr:hover{
+    background-color: #E6E4F3 ;
+    cursor: pointer;
+   
+}
+
+td,th{
+    border-style: none;
+    padding: 50px;
+}
+
+
 
 
 .container > .contactos{
