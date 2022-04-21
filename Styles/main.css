@@ -191,6 +191,10 @@ font-size: 25px;
     border: none;
 }
 
+.home{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .container > .img-registro{
