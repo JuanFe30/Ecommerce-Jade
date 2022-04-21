@@ -17,3 +17,28 @@
 #ubicacion>div>iframe{
     margin-bottom: 80px;
 }
+
+#ubicacion>div>form{
+    margin-bottom: 80px;
+}
+
+.contactos>div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #E0E2E4;
+
+}
+.contactos>div>ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contactos>div>ul>li{
+    padding: 10px;
+    list-style: none;
+    margin-top: 5px;
+}

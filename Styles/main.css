@@ -41,9 +41,9 @@ button:hover{
 }
 .cabecera{
 background-color: #E0E2E4;
-color: black;
+color: rgba(0, 0, 0, 0.849);
 height: 50px;
-font-family: serif;
+font-family: ro;
 font-size: 25px;
 }
 
@@ -54,7 +54,7 @@ font-size: 25px;
 }
 
 .cabecera>div>h4{
-    font-family: serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menuizq{
@@ -284,11 +284,12 @@ font-size: 25px;
     height: 600px;
    grid-column: 1/6;
    margin: 80px 0;
-   
+   background-color: white;
    
 }
 
 table{
+    
     position: relative;
     left: 450px;
     text-align: center;
@@ -329,12 +330,21 @@ td,th{
     grid-column: 1/6;
     font-size: 20px;
     text-align: center;
-    background-color: rgb(20, 25, 25);
-    color: white;
+    background-color: #E0E2E4;
+    color:rgba(0, 0, 0, 0.849);
     margin-top: 30px;
+}
 
-  
+.contactos>div>ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
+.contactos>div>ul>li{
+    padding: 10px;
+    list-style: none;
+    margin-top: 5px;
 }
 
 
